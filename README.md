@@ -17,7 +17,7 @@
 
 * 新建数据库enterprise,导入enterprise.sql文件
 
-* 使用tomcat启动
+* 使用tomcat启动   clean package -Dmaven.test.skip=true tomcat7:run
 
 * 前端地址：http://localhost:8080
 

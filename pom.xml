@@ -262,7 +262,8 @@
                 <version>2.1</version>
                 <configuration>
                     <port>8080</port>
-                    <path>/enterprise</path>
+                    <!-- <path>/enterprise</path> -->
+                    <path>/</path>
                     <uriEncoding>UTF-8</uriEncoding>
                     <finalName>enterprise</finalName>
                     <server>tomcat7</server>
@@ -276,4 +277,37 @@
 
         </plugins>
     </build>
+    
+    
+    <repositories>
+        <repository>
+            <id>aliyun</id>
+            <name>aliyun</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>never</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+            <pluginRepository>
+            <id>aliyun</id>
+            <name>aliyun</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            </pluginRepository>
+        </pluginRepositories>
+        
+        
 </project>
