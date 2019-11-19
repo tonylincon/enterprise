@@ -18,6 +18,15 @@
 * 新建数据库enterprise,导入enterprise.sql文件
 
 * 使用tomcat启动   clean package -Dmaven.test.skip=true tomcat7:run
+先重新打包，再跳过测试，再部署 mvn clean package -Dmaven.test.skip=true tomcat7:deploy
+
+tomcat7-maven-plugin常用命令
+tomcat7:reload 重新加载web war包
+tomcat7:start 启动tomcat
+tomcat7:stop 停止tomcat
+tomcat7:undeploy 停止一个war包
+tomcat7:redeploy 重新部署
+
 
 * 前端地址：http://localhost:8080
 
